@@ -33,13 +33,15 @@ var_dump($books);
     <title>Document</title>
 </head>
 <body>
-
-<?php
-    foreach ($aBooks as $book) {
-        echo '<li>' . $book ['title'] '</li>' ;
+    <ul>
+<?php     foreach ($aBooks as $book) { ?>
+        <li>
+            <a href="book.php?id=<?php echo $book[id]; ?>"
+            <?php echo $book['title']; ?>
+            </a>
+        </li>
     }
-    ?>
-
+    </ul>
     <script src="assets/app.js"></script>
 </body>
 </html>
