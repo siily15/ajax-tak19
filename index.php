@@ -36,9 +36,9 @@ var_dump($books);
     <ul>
 <?php     foreach ($aBooks as $book) { ?>
         <li>
-            <a href="book.php?id=<?php echo $book[id]; ?>"
-            <?php echo $book['title']; ?>
-            </a>
+            <a href="book.php?id="> . <?php echo $book[id] . </a> . ?>"
+            <?php echo $book['title'];
+            ?>
         </li>
     }
     </ul>
