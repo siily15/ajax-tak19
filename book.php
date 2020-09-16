@@ -16,7 +16,7 @@ $book = $stmt->fetch();
  <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+     <title>Raamat</title>
  </head>
  <body>
  <h1><?php echo $book['title']?></h1>
@@ -51,7 +51,7 @@ $book = $stmt->fetch();
     </tbody>
     <div style= "margi-top 2em,"></div>
     <span>
-    <a href="editfrom.php">muuda</a>
+    <a href="editfrom.php?id=<?php echo $book['id']; ?>">muuda</a>
     </span>
     <span>
     <a href="delete.php?id=<?php echo $book['id']; ?>">kustuda</a>
